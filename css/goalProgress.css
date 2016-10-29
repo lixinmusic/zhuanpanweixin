@@ -1,0 +1,76 @@
+*, h1, h2, h3, h4, input, p, img {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 125px; } }
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 100px; } }
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 84.375px; } }
+
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 73.4375px; } }
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 64.6875px; } }
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 64.375px; } }
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 58.59375px; } }
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 56.25px; } }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50px; } }
+
+
+.goalProgress {
+	background: #DCDBD5;
+	/*padding: 5px;*/
+	border-radius:0.5rem;
+	width:4.24rem;
+	line-height: 0.3rem;
+	font-weight: 700;
+	font-size: 0.18rem;
+	color: #fff;
+	text-align: center;
+	height:0.39rem;
+
+}
+div.progressBar {
+	background: #DACC28;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	/*letter-spacing: -1px;*/
+	padding:0.05rem;/*调节进度条的高度*/
+	display: block;
+	overflow: hidden;
+	width: 0.1rem;
+	border-radius:0.5rem;
+	height: 0.3rem;
+
+
+
+}
+span.goalAmount {
+	display: none;
+	text-indent: -9999px;
+}

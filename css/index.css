@@ -1,0 +1,404 @@
+@charset "UTF-8";
+*, h1, h2, h3, h4, h5, h6, input, p, img {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 125px; } }
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 100px; } }
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 84.375px; } }
+
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 73.4375px; } }
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 64.6875px; } }
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 64.375px; } }
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 58.59375px; } }
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 56.25px; } }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50px; } }
+
+.conter {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  /*  //进度条*/
+  /*  //惊喜1*/
+  /*  //惊喜2*/
+  /*//惊3*/
+  /*  选项卡*/ }
+  .conter .let {
+    width: 100%;
+    height: 1.35rem;
+    background: url(../images/tt.png) no-repeat;
+    background-size: contain;
+    position: relative; }
+    .conter .let .zi {
+      width: 5.87rem;
+      height: 0.29rem;
+      font-size: 0.15rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center; }
+    .conter .let .xia {
+      width: 4.88rem;
+      height: 0.27rem;
+      font-size: 0.15rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      text-align: center; }
+  .conter .tiao {
+    width: 100%;
+    height: 1.35rem;
+    background: url(../images/tt.png) no-repeat;
+    background-size: contain;
+    position: relative; }
+    .conter .tiao p {
+      font-size: 0.2rem;
+      position: absolute;
+      top: 0.05rem;
+      left: 0.96rem;
+      margin: auto;
+      color: #de2a45; }
+      .conter .tiao p span {
+        color: #000;
+        font-size: 0.16rem; }
+    .conter .tiao .container {
+      position: absolute;
+      left: 0.61rem;
+      top: 0.59rem; }
+    .conter .tiao .zong {
+      font-size: 0.12rem;
+      position: absolute;
+      top: 0.87rem;
+      left: 0.96rem;
+      margin: auto; }
+    .conter .tiao b {
+      color: #d83852; }
+  .conter .jingx {
+    width: 100%;
+    height: 1.33rem;
+    background: #fdf4f9;
+    overflow: hidden;
+    /*  border:1px solid #000;*/
+    position: relative; }
+    .conter .jingx .jin {
+      width: 100%;
+      height: 0.24rem;
+      background: url(../images/jing1.png) no-repeat;
+      background-size: contain; }
+    .conter .jingx .wu img {
+      width: 2.29rem;
+      height: 0.63rem;
+      position: absolute;
+      left: 0.62rem;
+      top: 0.41rem; }
+    .conter .jingx .si img {
+      width: 0.93rem;
+      height: 0.63rem;
+      position: absolute;
+      left: 3.39rem;
+      top: 0.41rem; }
+    .conter .jingx .san img {
+      width: 1.42rem;
+      height: 0.72rem;
+      position: absolute;
+      left: 4.6rem;
+      top: 0.31rem; }
+  .conter .jinga {
+    width: 100%;
+    height: 1.33rem;
+    background: #fdf4f9;
+    overflow: hidden;
+    /*border:1px solid #000;*/
+    position: relative; }
+    .conter .jinga .ji {
+      width: 100%;
+      height: 0.24rem;
+      background: url(../images/jing2.png) no-repeat;
+      background-size: contain; }
+    .conter .jinga .wu img {
+      width: 2.29rem;
+      height: 0.63rem;
+      position: absolute;
+      left: 0.62rem;
+      top: 0.41rem; }
+    .conter .jinga .si img {
+      width: 0.93rem;
+      height: 0.63rem;
+      position: absolute;
+      left: 3.39rem;
+      top: 0.41rem; }
+    .conter .jinga .san img {
+      width: 1.42rem;
+      height: 0.72rem;
+      position: absolute;
+      left: 4.6rem;
+      top: 0.31rem; }
+  .conter .jingb {
+    width: 100%;
+    height: 2.33rem;
+    background: #fbecf1;
+    overflow: hidden;
+    /* border:1px solid #000;*/
+    position: relative; }
+    .conter .jingb .ji {
+      width: 100%;
+      height: 0.24rem;
+      background: url(../images/jing3.png) no-repeat;
+      background-size: contain; }
+    .conter .jingb .wu img {
+      width: 2.29rem;
+      height: 0.63rem;
+      position: absolute;
+      left: 0.62rem;
+      top: 0.41rem; }
+    .conter .jingb .si li {
+      width: 0.93rem;
+      height: 0.63rem;
+      position: absolute;
+      left: 3.19rem;
+      top: 0.41rem;
+      font-size: 0.4rem;
+      font-weight: 700; }
+    .conter .jingb .san img {
+      width: 1.42rem;
+      height: 0.72rem;
+      position: absolute;
+      left: 4.6rem;
+      top: 0.31rem; }
+    .conter .jingb .ti img {
+      position: absolute;
+      top: 1.3rem;
+      left: 0; }
+    .conter .jingb .jia img {
+      width: 2.6rem;
+      height: 0.53rem;
+      position: absolute;
+      left: 3.75rem;
+      top: 1.56rem; }
+  .conter .tab {
+    width: 100%;
+    height: auto;
+    /* border:1px solid #000;*/
+    /*  选项卡中各个内容*/ }
+    .conter .tab .title {
+      width: 100%;
+      height: 0.55rem;
+      /* border:1px solid #000;*/ }
+      .conter .tab .title li {
+        /* border:1px solid #000;*/
+        width: 1.55rem;
+        height: 100%;
+        background: url(../images/tu2.png) no-repeat;
+        background-size: center;
+        text-align: center;
+        line-height: 0.5rem;
+        font-size: 0.18rem;
+        color: #000;
+        float: left; }
+      .conter .tab .title .active {
+        background: url(../images/tu1.png) no-repeat;
+        background-size: center; }
+    .conter .tab .content {
+      width: 100%;
+      height: auto;
+      position: relative;
+      /*  图文详情*/
+      /*<!-- *****图文详情end*******-->*/
+      /* <!-- 参与记录开始-->  */ }
+      .conter .tab .content li {
+        opacity: 0;
+        position: absolute; }
+      .conter .tab .content #tu video {
+        width: 6.04rem;
+        height: 3.87rem;
+        position: absolute;
+        left: 0.18rem;
+        top: 0;
+        /*   background: #fff;*/ }
+      .conter .tab .content #tu .lu img {
+        width: 5.28rem;
+        height: 0.89rem;
+        position: absolute;
+        top: 4.02rem;
+        left: 0.58rem;
+        margin: 0 auto; }
+      .conter .tab .content #tu .lian img {
+        width: 4.94rem;
+        height: 2.59rem;
+        position: absolute;
+        top: 5.13rem;
+        left: 0.75rem;
+        margin: 0 auto; }
+      .conter .tab .content #tu .yu {
+        width: 6.4rem;
+        height: 7.99rem;
+        position: absolute;
+        top: 8.03rem;
+        left: 0;
+        background: url(../images/wen3.png) no-repeat;
+        background-size: contain;
+        overflow: hidden; }
+      .conter .tab .content #tu .pi {
+        width: 6.4rem;
+        height: 1.28rem;
+        position: absolute;
+        top: 16rem;
+        left: 0;
+        margin: auto;
+        background: url(../images/wen4.png) no-repeat;
+        background-size: contain; }
+      .conter .tab .content #tu .ji {
+        width: 6.4rem;
+        height: 6.77rem;
+        position: absolute;
+        top: 17.19rem;
+        left: 0;
+        margin: auto;
+        background: url(../images/wen5.png) no-repeat;
+        background-size: contain; }
+      .conter .tab .content #tu .luxin {
+        width: 6.4rem;
+        height: 10.99rem;
+        position: absolute;
+        top: 23.98rem;
+        left: 0;
+        margin: auto;
+        background: url(../images/wen6.png) no-repeat;
+        background-size: contain; }
+      .conter .tab .content #tu .wuxia {
+        width: 6.4rem;
+        height: 9.16rem;
+        position: absolute;
+        top: 34.9rem;
+        left: 0;
+        margin: auto;
+        background: url(../images/wen7.png) no-repeat;
+        background-size: contain; }
+      .conter .tab .content #tu .fenzi {
+        width: 6.4rem;
+        height: 7.25rem;
+        position: absolute;
+        top: 44rem;
+        left: 0;
+        margin: auto;
+        background: url(../images/wen8.png) no-repeat;
+        background-size: contain; }
+      .conter .tab .content #tu .yinyu {
+        width: 6.4rem;
+        height: 12.03rem;
+        position: absolute;
+        top: 51.25rem;
+        left: 0;
+        margin: auto;
+        background: url(../images/wen9.png) no-repeat;
+        background-size: contain; }
+      .conter .tab .content #tu .chan {
+        width: 6.4rem;
+        height: 1.32rem;
+        position: absolute;
+        top: 63.22rem;
+        left: 0;
+        margin: auto;
+        background: url(../images/wen10.png) no-repeat;
+        background-size: contain; }
+      .conter .tab .content #tu .zuihao {
+        width: 6.4rem;
+        height: 6.11rem;
+        position: absolute;
+        top: 64.26rem;
+        left: 0;
+        margin: auto;
+        background: url(../images/wen11.png) no-repeat;
+        background-size: contain; }
+      .conter .tab .content #tu .ditu {
+        width: 5.53rem;
+        height: 1.53rem;
+        /* border:1px solid #000;*/
+        position: absolute;
+        top: 71.51rem;
+        left: 0.47rem;
+        margin: auto;
+        background: url(../images/wen12.png) no-repeat;
+        background-size: contain; }
+      .conter .tab .content #tu .th {
+        width: 100%;
+        height: 75rem;
+        background: #fff; }
+      .conter .tab .content .active {
+        opacity: 1; }
+
+/*底部选项*/
+.di {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.73rem;
+  background: #FFF6F6; }
+  .di .zhuan {
+    width: 2.13rem;
+    height: 0.73rem;
+    /* border:1px solid #000;*/
+    float: left;
+    font-size: 0.25rem;
+    text-align: center;
+    line-height: 0.73rem;
+    background: #c09dd8; }
+    .di .zhuan:hover {
+      background: #70c1c4; }
+  .di .shouye {
+    width: 2.13rem;
+    height: 0.73rem;
+    font-size: 0.25rem;
+    float: left;
+    text-align: center;
+    line-height: 0.73rem;
+    background: #c09dd8; }
+    .di .shouye:hover {
+      background: #70c1c4; }
+  .di .gou {
+    width: 2.13rem;
+    height: 0.73rem;
+    font-size: 0.25rem;
+    float: left;
+    text-align: center;
+    line-height: 0.73rem;
+    background: #c09dd8; }
+    .di .gou:hover {
+      background: #70c1c4; }

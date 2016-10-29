@@ -1,0 +1,50 @@
+﻿*,h1,h2,h3,h4,h5,h6,input,p,img{
+  margin: 0;
+  padding:0;
+  list-style:none;
+}
+a{
+  text-decoration: none;
+}
+@mixin cube ($size) {
+  width: $size;
+  height: $size;
+  background: #ff4b3f;
+}
+@mixin matrix($w,$h){
+  width:$w;
+  height:$h;
+  background:rgb(120,254,53);
+}
+@mixin topbottom{
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin: 0 auto;
+}
+@mixin leftright{
+  position:absolute;
+  left:0;
+  right:0;
+  margin:auto
+}
+@mixin center{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:0 auto;
+}
+@mixin gai{//相当于给盒子加了一个遮罩
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+@mixin cirde($size){
+  width: $size;
+  height:$size;
+  border-radius: 50%;
+}

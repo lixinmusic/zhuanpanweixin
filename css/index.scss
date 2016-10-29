@@ -1,0 +1,485 @@
+@import 'public';
+
+@mixin userem($size){
+  $list:800px,640px,540px,470px,414px,412px,375px,360px,320px;
+  @each $i in $list{
+    @media screen and (max-width:#{$i}){
+      html{
+        font-size: 100px*($i/$size);
+      }
+    }
+  }
+}
+@include userem(640px);
+
+.conter{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top:0;
+  bottom:0;
+  overflow-y: auto;
+
+
+  .let {
+    width: 100%;
+    height: 1.35rem;
+    background: url(../images/tt.png) no-repeat;
+    background-size: contain;
+    position: relative;
+
+    .zi {
+      width: 5.87rem;
+      height: 0.29rem;
+      font-size: 0.15rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+
+    }
+    .xia {
+      width: 4.88rem;
+      height: 0.27rem;
+      font-size: 0.15rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      text-align: center;
+
+    }
+  }
+/*  //进度条*/
+  .tiao {
+    width: 100%;
+    height: 1.35rem;
+    background: url(../images/tt.png) no-repeat;
+    background-size: contain;
+    position: relative;
+
+p{
+  font-size: 0.2rem;
+  position: absolute;
+  top:0.05rem;
+  left: 0.96rem;
+  margin: auto;
+  color:#de2a45;
+  span{
+    color:#000;
+    font-size: 0.16rem;
+  }
+
+}
+.container{
+  position: absolute;
+  left:0.61rem;
+  top:0.59rem;
+}
+.zong{
+  font-size: 0.12rem;
+  position: absolute;
+  top:0.87rem;
+  left: 0.96rem;
+  margin: auto;
+}
+   b {
+    color:#d83852;
+    }
+
+  }
+
+/*  //惊喜1*/
+  .jingx {
+    width: 100%;
+    height: 1.33rem;
+    background: #fdf4f9;
+    overflow: hidden;
+    /*  border:1px solid #000;*/
+    position: relative;
+    .jin {
+      width: 100%;
+      height: 0.24rem;
+      background: url(../images/jing1.png) no-repeat;
+      background-size: contain;
+    }
+    .wu {
+      img {
+        width: 2.29rem;
+        height: 0.63rem;
+        position: absolute;
+        left: 0.62rem;
+        top: 0.41rem;
+      }
+    }
+    .si {
+      img {
+        width: 0.93rem;
+        height: 0.63rem;
+        position: absolute;
+        left: 3.39rem;
+        top: 0.41rem;
+      }
+    }
+    .san {
+      img {
+        width: 1.42rem;
+        height: 0.72rem;
+        position: absolute;
+        left: 4.6rem;
+        top: 0.31rem;
+      }
+
+    }
+
+  }
+/*  //惊喜2*/
+  .jinga {
+    width: 100%;
+    height: 1.33rem;
+    background: #fdf4f9;
+    overflow: hidden;
+    /*border:1px solid #000;*/
+    position: relative;
+    .ji {
+      width: 100%;
+      height: 0.24rem;
+      background: url(../images/jing2.png) no-repeat;
+      background-size: contain;
+    }
+    .wu {
+      img {
+        width: 2.29rem;
+        height: 0.63rem;
+        position: absolute;
+        left: 0.62rem;
+        top: 0.41rem;
+      }
+    }
+    .si {
+      img {
+        width: 0.93rem;
+        height: 0.63rem;
+        position: absolute;
+        left: 3.39rem;
+        top: 0.41rem;
+      }
+    }
+    .san {
+      img {
+        width: 1.42rem;
+        height: 0.72rem;
+        position: absolute;
+        left: 4.6rem;
+        top: 0.31rem;
+      }
+
+    }
+
+  }
+/*//惊3*/
+  .jingb {
+    width: 100%;
+    height: 2.33rem;
+    background: #fbecf1;
+    overflow: hidden;
+  /* border:1px solid #000;*/
+    position: relative;
+    .ji {
+      width: 100%;
+      height: 0.24rem;
+      background: url(../images/jing3.png) no-repeat;
+      background-size: contain;
+    }
+    .wu {
+      img {
+        width: 2.29rem;
+        height: 0.63rem;
+        position: absolute;
+        left: 0.62rem;
+        top: 0.41rem;
+      }
+    }
+    .si {
+      li {
+        width: 0.93rem;
+        height: 0.63rem;
+        position: absolute;
+        left: 3.19rem;
+        top: 0.41rem;
+        font-size: 0.4rem;
+        font-weight: 700;
+      }
+    }
+    .san {
+      img {
+        width: 1.42rem;
+        height: 0.72rem;
+        position: absolute;
+        left: 4.6rem;
+        top: 0.31rem;
+      }
+
+    }
+.ti{
+  img{
+    position: absolute;
+    top:1.3rem;
+    left:0;
+  }
+}
+.jia{
+  img{
+    width: 2.6rem;
+    height: 0.53rem;
+    position: absolute;
+    left:3.75rem;
+    top:1.56rem;
+  }
+}
+  }
+/*  选项卡*/
+.tab{
+  width: 100%;
+  height:auto;
+ /* border:1px solid #000;*/
+  .title{
+    width:100%;
+    height:0.55rem;
+   /* border:1px solid #000;*/
+    li{
+     /* border:1px solid #000;*/
+     width: 1.55rem ;
+      height: 100%;
+      background: url(../images/tu2.png)no-repeat;
+      background-size: center;
+      text-align: center;
+      line-height: 0.5rem;
+      font-size: 0.18rem;
+      color:#000;
+      float: left;
+    }
+    .active{
+      background: url(../images/tu1.png)no-repeat;
+      background-size: center;
+    }
+  }
+/*  选项卡中各个内容*/
+  .content{
+    width:100%;
+    height: auto;
+    position: relative;
+
+    li{
+      opacity: 0;
+      position: absolute;
+    }
+  /*  图文详情*/
+   #tu{
+     video{
+     width: 6.04rem;
+     height: 3.87rem;
+       position: absolute;
+     left:0.18rem;
+     top:0;
+    /*   background: #fff;*/
+     }
+.lu{
+  img{
+    width: 5.28rem;
+    height:0.89rem;
+    position: absolute;
+    top:4.02rem;
+    left:0.58rem;
+    margin: 0 auto;
+  }
+}
+     .lian{
+       img{
+         width: 4.94rem;
+         height:2.59rem;
+         position: absolute;
+         top:5.13rem;
+         left:0.75rem;
+         margin: 0 auto;
+       }
+     }
+.yu{
+  width: 6.4rem;
+  height: 7.99rem;
+  position: absolute;
+  top:8.03rem;
+  left:0;
+  background: url(../images/wen3.png)no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+   .pi{
+     width:6.4rem;
+     height: 1.28rem;
+     position: absolute;
+     top:16rem;
+     left:0;
+     margin: auto;
+     background: url(../images/wen4.png)no-repeat;
+     background-size: contain;
+   }
+.ji{
+  width: 6.4rem;
+  height:6.77rem;
+  position: absolute;
+  top:17.19rem;
+  left:0;
+  margin: auto;
+  background: url(../images/wen5.png)no-repeat;
+  background-size: contain;
+}
+.luxin{
+  width: 6.4rem;
+  height:10.99rem;
+  position: absolute;
+  top:23.98rem;
+  left:0;
+  margin: auto;
+  background: url(../images/wen6.png)no-repeat;
+  background-size: contain;
+}
+.wuxia{
+  width: 6.4rem;
+  height: 9.16rem;
+  position: absolute;
+  top:34.9rem;
+  left:0;
+  margin: auto;
+  background: url(../images/wen7.png)no-repeat;
+  background-size: contain;
+}
+.fenzi{
+  width:6.4rem;
+  height: 7.25rem;
+  position: absolute;
+  top:44rem;
+  left:0;
+  margin: auto;
+  background: url(../images/wen8.png)no-repeat;
+  background-size: contain;
+}
+.yinyu{
+  width: 6.4rem;
+  height: 12.03rem;
+  position: absolute;
+  top:51.25rem;
+  left:0;
+  margin: auto;
+  background: url(../images/wen9.png)no-repeat;
+  background-size: contain;
+
+}
+ .chan{
+   width: 6.4rem;
+   height: 1.32rem;
+   position: absolute;
+   top:63.22rem;
+   left:0;
+   margin: auto;
+   background: url(../images/wen10.png)no-repeat;
+   background-size: contain;
+ }
+ .zuihao{
+   width: 6.4rem;
+   height:6.11rem;
+   position: absolute;
+   top:64.26rem;
+   left:0;
+   margin: auto;
+   background: url(../images/wen11.png)no-repeat;
+   background-size: contain;
+ }
+ .ditu{
+   width: 5.53rem;
+   height:1.53rem;
+  /* border:1px solid #000;*/
+   position: absolute;
+   top:71.51rem;
+   left:0.47rem;
+   margin: auto;
+   background: url(../images/wen12.png)no-repeat;
+   background-size: contain;
+
+ }
+
+     .th{
+       width: 100%;
+       height:75rem;
+       background:#fff;
+     }
+   }
+  /*<!-- *****图文详情end*******-->*/
+
+ /* <!-- 参与记录开始-->  */
+
+
+
+    .active {
+      opacity: 1;
+    }
+  }
+
+
+}
+
+
+
+}
+/*底部选项*/
+.di{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:0.73rem;
+  background:#FFF6F6;
+  .zhuan{
+    width: 2.13rem;
+    height: 0.73rem;
+   /* border:1px solid #000;*/
+    float: left;
+    font-size: 0.25rem;
+    text-align: center;
+    line-height: 0.73rem;
+    background:#c09dd8 ;
+    &:hover{
+      background:#70c1c4 ;
+    }
+  }
+  .shouye{
+    width:2.13rem;
+    height: 0.73rem;
+    font-size: 0.25rem;
+    float: left;
+    text-align: center;
+    line-height: 0.73rem;
+    background:#c09dd8 ;
+    &:hover{
+      background:#70c1c4 ;
+    }
+  }
+.gou{
+  width:2.13rem;
+  height: 0.73rem;
+  font-size: 0.25rem;
+  float: left;
+  text-align: center;
+  line-height: 0.73rem;
+  background:#c09dd8 ;
+  &:hover{
+    background:#70c1c4 ;
+  }
+}
+
+}
+
+

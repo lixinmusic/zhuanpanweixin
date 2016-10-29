@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>抽奖</title>
+  <link rel="stylesheet" href="css/lunbo.css" />
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="js/index.js"></script>
+
+  <script type="text/javascript" src="js/jquery.1.4.2-min.js"></script>
+  <!--  轮播-->
+  <script src="js/TouchSlide.1.1.js"></script>
+  <!--价格-->
+  <script type="text/javascript" src="js/payfor.js"></script>
+  <link rel="stylesheet" href="css/jiage.css" />
+
+ <!-- ***选项卡***-->
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/jquery.tab.js"></script>
+  <script src="js/xuan.js"></script>
+ <!--*******************进度条*****-->
+  <link rel="stylesheet" type="text/css" href="css/goalProgress.css" />
+  <script type="text/javascript" src="js/goalProgress.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#sample_goal').goalProgress({
+        goalAmount: 100,
+        currentAmount: 70,
+        textBefore: '',
+        textAfter: ' %'
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="conter">
+<!-- 本例主要代码 Start ================================ -->
+<div id="focus" class="focus">
+  <div class="hd">
+    <ul></ul>
+  </div>
+  <div class="bd">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="images/tb10.jpg"/>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/tb13.jpg"/>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+
+  TouchSlide({
+    slideCell:"#focus",
+    titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+    mainCell:".bd ul",
+    effect:"leftLoop",
+    autoPlay:true,//自动播放
+    autoPage:true //自动分页
+  });
+
+</script>
+<!-- 本例主要代码 End ================================ -->
+<div class="let">
+<p class="zi">本活动已申请朝阳区公证处公证，保证活动的真实公正!</p>
+  <p class="xia">(每满299人次，即抽取一位获得iphone7)</p>
+</div>
+
+<!--进度条-->
+<div class="tiao">
+
+  <p>送iphone7到家活动<span>&nbsp;第20161019001期</span></p>
+  <div class="content">
+    <div class="container">
+      <div id="sample_goal"></div>
+    </div>
+  </div>
+<p class="zong">总需299人次 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;剩余<b>70</b>人次</span></p>
+
+</div>
+<!--惊喜1-->
+<div class="jingx">
+<div class="jin"></div>
+    <ul class="wu">
+    <img src="images/yi.png" alt="">
+    </ul>
+  <ul class="si">
+    <img src="images/yi2.png" alt="">
+  </ul>
+
+  <a href="">
+  <ul class="san">
+    <img src="images/yi4.png" alt="">
+  </ul>
+  </a>
+</div>
+
+
+
+<!--惊喜2-->
+
+<div class="jinga">
+  <div class="ji"></div>
+  <ul class="wu">
+    <img src="images/er1.png" alt="">
+  </ul>
+  <ul class="si">
+    <img src="images/er2.png" alt="">
+  </ul>
+
+  <a href="">
+    <ul class="san">
+      <img src="images/er3.png" alt="">
+    </ul>
+  </a>
+</div>
+
+<!--  惊3-->
+  <div class="jingb">
+    <div class="ji"></div>
+    <ul class="wu">
+      <img src="images/san1.png" alt="">
+    </ul>
+    <ul class="si">
+       <li>￥458</li>
+    </ul>
+
+    <a href="">
+      <ul class="san">
+        <img src="images/san2.png" alt="">
+      </ul>
+    </a>
+    <div class="ti">
+      <img src="images/jing3.png" alt="">
+    </div>
+    <!--演示内容开始-->
+
+    <div class="p_number">
+
+      <!--<div style="height:36px;font-size:16px;"><strong id="price_item_1">￥150.00</strong></div>-->
+      <span style="float:left;font:12px/180% Arial">购买个数：&nbsp;</span>
+      <div class="f_l add_chose">
+        <a class="reduce" onClick="setAmount.reduce('#qty_item_1')" href="javascript:void(0)">
+          -</a>
+        <input type="text" name="qty_item_1" value="1" id="qty_item_1" onKeyUp="setAmount.modify('#qty_item_1')" class="text" />
+        <a class="add" onClick="setAmount.add('#qty_item_1')" href="javascript:void(0)">
+          +</a>
+      </div>
+
+      <!--<div class="f_l buy">
+              总价：<span class="total-font" id="total_item_1">￥89.00</span>
+              <input type="hidden" name="total_price" id="total_price" value="" />
+              <span class="jifen">购买商品可获得：<b id="total_points">18</b>积分</span>
+          </div>-->
+
+    </div>
+    <!--演示内容结束-->
+    <div class="jia">
+      <img src="images/si.png" alt="">
+    </div>
+  </div>
+  <!--********选项卡****-->
+<div class="tab" id="shang">
+  <ul class="title">
+    <li class="active">图文详情</li>
+    <li>参与记录</li>
+    <li>晒单分享</li>
+    <li>往期记录</li>
+  </ul>
+  <ul class="content">
+   <!-- *****图文详情*******-->
+    <li class="active" id="tu">
+      <video src="艺俪源电商讨论会邀请函.mp4"
+             controls="controls" ></video>
+      <div class="lu">
+        <img src="images/wen1.png" alt="">
+      </div>
+<div class="lian">
+  <img src="images/wen2.png" alt="">
+</div>
+      <div class="yu"></div>
+      <div class="pi"></div>
+      <div class="ji"></div>
+      <div class="luxin"></div>
+      <div class="wuxia"></div>
+      <div class="fenzi"></div>
+      <div class="yinyu"></div>
+      <div class="chan"></div>
+      <div class="zuihao"></div>
+      <div class="ditu"> </div>
+
+<div class="th"></div>
+
+    </li>
+   <!-- 参与记录-->
+    <li class="can">2</li>
+    <!--晒单分享-->
+    <li class="shai">3</li>
+    <!--往期记录-->
+    <li class="wang">sdsdkjfksjdfksdfjjoo</li>
+  </ul>
+</div>
+
+
+</div>
+
+<!--底部选项-->
+<div class="di">
+  <a href="">
+  <ul class="zhuan">转发摇奖</ul>
+</a>
+  <a href="">
+    <ul class="shouye">首页</ul>
+  </a>
+  <a href="">
+    <ul class="gou">购买夺宝</ul>
+  </a>
+</div>
+</body>
+</html>
